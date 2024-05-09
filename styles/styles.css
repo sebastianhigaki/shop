@@ -9,6 +9,8 @@ header {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .search .logo a{
     font-family: "Tac One", sans-serif;
@@ -43,23 +45,22 @@ header {
 .nav {
     padding: 10px 0;
 }
-.nav ul {
+.nav {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.nav ul li a {
+.nav a {
     color: white;
     font-weight: 700;
     text-align: left;
     text-decoration: none;
 }
-.nav ul li a:hover {
+.nav a:hover {
     text-decoration: underline;
 }
-
 
 
 
@@ -104,7 +105,12 @@ main {
     height: auto;
     background-color: rgb(0, 0, 0);
 }
-main .container {
+body, html {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin: auto;
+}
+main .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 130px;
@@ -115,11 +121,6 @@ main .container {
     height: 200px;
     object-fit: cover;
     object-position: center center;
-}
-body, html {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    margin: auto;
 }
 .product-price-block  {
     display: flex;
@@ -132,7 +133,7 @@ body, html {
     border-radius: 25px;
     max-width: 100%;
     overflow: hidden;
-    box-shadow: 0 0 15px rgb(16, 8, 138);
+    box-shadow: 0 0 30px rgb(16, 8, 138);
 }
 .product-info {
     padding: 20px;
@@ -171,6 +172,7 @@ body, html {
 
 
 
+
 /* footer */
 footer .container{
     min-height: 168px;
@@ -183,10 +185,7 @@ footer .container{
     display: flex;
     justify-content: space-around;
 }
-.columns-container .col ul {
-    list-style-type: none;
-    padding: 0;
-}
+
 .columns-container .col ul li {
     padding: 5px 0;
 }
@@ -194,9 +193,17 @@ footer .container{
     font-weight: bold;
     padding-bottom: 20px;
 }
-.columns-container .col ul li a {
+.columns-container a {
     color: white;
     text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+.columns-container ul {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
 }
 .copyright {
     text-align: center;
@@ -238,7 +245,7 @@ footer .container{
     }
 
     /* Adjustments for main */
-    main .container {
+    main .product-container {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px; 
         padding: 30px; 
@@ -289,7 +296,7 @@ footer .container{
     }
 
     /* Adjustments for main */
-    main .container {
+    main .product-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 55px; 
         padding: 74px; 
