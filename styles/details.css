@@ -125,6 +125,7 @@ main {
     grid-template-columns: 1fr 5fr;
     max-width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 .product-images-block .thumbnail-container {
     grid-column: 1;
